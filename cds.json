@@ -23,14 +23,14 @@
     {
         "titolo": "Back to Black",
         "artista": "Amy Winehouse",
-        "url_cover": "https://upload.wikimedia.org/wikipedia/en/7/74/Amy_Winehouse_-_Back_to_Black_%28album%29.png",
+        "url_cover": "https://upload.wikimedia.org/wikipedia/en/6/67/Amy_Winehouse_-_Back_to_Black_%28album%29.png",
         "anno_pubblicazione": 2006,
         "genere": "Soul"
     },
     {
         "titolo": "Random Access Memories",
         "artista": "Daft Punk",
-        "url_cover": "https://upload.wikimedia.org/wikipedia/en/a/a7/Random_Access_Memories.jpg",
+        "url_cover": "https://upload.wikimedia.org/wikipedia/en/2/26/Daft_Punk_-_Random_Access_Memories.png",
         "anno_pubblicazione": 2013,
         "genere": "Electronic"
     }
