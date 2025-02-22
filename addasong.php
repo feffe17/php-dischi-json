@@ -30,7 +30,7 @@
 
     <main class="mt-3 vh-100">
         <div class="container">
-            <form action="./index.php" method="post" class="row g-3 text-light">
+            <form action="./script.php" method="POST" class="row g-3 text-light">
                 <div class="col-md-6">
                     <label for="titolo" class="form-label ">Titolo</label>
                     <input type="text" class="form-control" id="titolo" name="titolo" required>

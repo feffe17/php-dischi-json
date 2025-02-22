@@ -1,5 +1,9 @@
 <?php
-require_once('./script.php');
+//leggere il file cds.json
+$cds_list = file_get_contents("./cds.json");
+
+//decodificare il contenuto del file cds.json
+$cds_list_decoded = json_decode($cds_list, true);
 ?>
 
 <!doctype html>
@@ -15,7 +19,7 @@ require_once('./script.php');
 
 <body>
     <header class="py-2 px-4 d-flex justify-content-between align-items-center">
-        <a href="./index.php" class="title">Sorryfy</a>
+        <a href="./index.php" class="title">SorryCry</a>
         <a href="./addasong.php" class="add-btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
                 <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
@@ -25,7 +29,7 @@ require_once('./script.php');
     <main>
         <div class="container">
             <div class="row">
-                <?php foreach ($cds_list as $cd): ?>
+                <?php foreach ($cds_list_decoded as $cd): ?>
                     <div class="col-12 col-sm-6 col-md-4 p-3 d-flex">
                         <div class="card h-auto w-100">
 
