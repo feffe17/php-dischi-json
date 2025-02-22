@@ -1,6 +1,5 @@
 <?php
-$cds_list = file_get_contents("./cds.json");
-$cds_list = json_decode($cds_list, true);
+require_once('./script.php');
 ?>
 
 <!doctype html>
@@ -15,8 +14,13 @@ $cds_list = json_decode($cds_list, true);
 </head>
 
 <body>
-    <header>
-        <h1 class="text-center m-0">Titolo</h1>
+    <header class="py-2 px-4 d-flex justify-content-between align-items-center">
+        <a href="./index.php" class="title">Sorryfy</a>
+        <a href="./addasong.php" class="add-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+            </svg>
+        </a>
     </header>
     <main>
         <div class="container">
